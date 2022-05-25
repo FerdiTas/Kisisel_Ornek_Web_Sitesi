@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--favicon-->
+    <link rel="icon" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--**********************Slider Yapımı**********************-->
+    <div class="container">
+        <div class="image-container">
+            <img src="image/freelancerPage.png" id="content1" class="active" height="500" width="800">
+            <img src="image/myTeam.jfif" id="content2" height="500" width="800">
+            <img src="image/app2.gif" id="content3" height="500" width="800">
+            <img src="image/tikStar.jpg" id="content4" height="500" width="800">
+        </div>
+        <div class="dot-container">
+            <button onclick="dot(1)"></button>
+            <button onclick="dot(2)"></button>
+            <button onclick="dot(3)"></button>
+            <button onclick="dot(4)"></button>
+        </div>
+        <button id="prev" onclick="prev()"> &lt; </button>
+        <button id="next" onclick="next()"> &gt; </button>
+    </div>
+
+    <!--**********************nav bar yapımı**********************-->
+    <div class="menu-bar">
+        <h1 class="logo">Ferdi <span>Taş</span></h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html" target="_self">About</a></li>
+            <li><a href="#">Pages <i class="fas fa-caret-down"></i></a>
+
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li>
+                            <a href="#">Team <i class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                    <li><a href="#">Team-1</a></li>
+                                    <li><a href="#">Team-2</a></li>
+                                    <li><a href="#">Team-3</a></li>
+                                    <li><a href="#">Team-4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.ferditas.calculatorandmathformula&gl=TR">Project</a>
+            </li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>
+
+    <!--**********************footer yapımı**********************-->
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <i class="fa fa-user-shield"></i>
+                    <span class="logo_name">Ferdi Taş</span>
+                </div>
+                <div class="media-icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ferditaas/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Company</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Get started</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Services</li>
+                    <li><a href="#">App design</a></li>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Logo design</a></li>
+                    <li><a href="#">Banner design</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Account</li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Prefrences</a></li>
+                    <li><a href="#">Purchase</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Courses</li>
+                    <li><a href="#">HTML & CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Photography</a></li>
+                    <li><a href="#">Photoshop</a></li>
+                </ul>
+                <ul class="box input-box">
+                    <li class="link_name">Subscribe</li>
+                    <li><input type="email" placeholder="Enter your email"></li>
+                    <li><input type="button" value="Subscribe"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2022 <a href="#">FerdiTaş.</a>All rights reserved</span>
+                <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a>
+                </span>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
